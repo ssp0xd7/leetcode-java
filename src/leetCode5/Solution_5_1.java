@@ -1,7 +1,7 @@
 package leetCode5;
 
 /**
- * Created by kevin on 17-3-27.
+ * @author kevin(ssp0xd7@gmail.com) 17-3-27.
  */
 public class Solution_5_1 {
 

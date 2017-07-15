@@ -1,13 +1,14 @@
 package leetCode2;
 
 /**
- * Created by Kevin_Mit on 2017/3/14.
+ * @author kevin(ssp0xd7@gmail.com) 2017/3/14.
  */
 public class Solution_2 {
 
     //Definition for singly-linked list.
     static class ListNode {
         int val;
+
         ListNode next;
 
         ListNode(int x) {
@@ -30,18 +31,18 @@ public class Solution_2 {
             l2 = l2.next;
             current = current.next;
         }
-        while(l1 != null) {
-            int sum =  carry + l1.val;
+        while (l1 != null) {
+            int sum = carry + l1.val;
             current.next = new ListNode(sum % 10);
-            carry = sum /10;
+            carry = sum / 10;
             l1 = l1.next;
             current = current.next;
         }
 
-        while(l2 != null) {
-            int sum =  carry + l2.val;
+        while (l2 != null) {
+            int sum = carry + l2.val;
             current.next = new ListNode(sum % 10);
-            carry = sum /10;
+            carry = sum / 10;
             l2 = l2.next;
             current = current.next;
         }
@@ -65,7 +66,7 @@ public class Solution_2 {
         l2 = l2.next;
         l2.next = new ListNode(4);
         ListNode listNode = Solution_2.addTwoNumbers(list1, list2);
-        while(listNode!=null){
+        while (listNode != null) {
             System.out.println(listNode.val);
             listNode = listNode.next;
         }

@@ -1,10 +1,6 @@
 package leetCode5;
 
 /**
- * Created by kevin on 17-3-27.
- */
-
-/**
  * 5. Longest Palindromic Substring
  * <p>
  * Given a string s, find the longest palindromic substring in s. You may assume that the maximum length of s is 1000.
@@ -15,13 +11,16 @@ package leetCode5;
  * <p>
  * Output: "bab"
  * <p>
- * Note: "aba" is also a valid answer.
- * Example:
+ * Note: "aba" is also a valid answer. Example:
  * <p>
  * Input: "cbbd"
  * <p>
  * Output: "bb"
+ * <p>
+ * 
+ * @author kevin(ssp0xd7@gmail.com) 2017/3/14.
  */
+
 public class Solution_5 {
 
     /**
@@ -52,8 +51,8 @@ public class Solution_5 {
                 }
             }
         }
-        if(result == null||result.length()==0){
-            return s.substring(0,1);
+        if (result == null || result.length() == 0) {
+            return s.substring(0, 1);
         }
         return result;
     }
@@ -82,13 +81,3 @@ public class Solution_5 {
         System.out.println(Solution_5.longestPalindrome(s));
     }
 }
-
-
-
-
-
-
-
-
-
-

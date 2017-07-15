@@ -1,16 +1,11 @@
 package leetCode3;
 
-/**
- * Created by Kevin_Mit on 2017/3/14.
- */
-
 import java.util.HashSet;
 import java.util.Set;
 
 /**
- * 3. Longest Substring Without Repeating Characters
- *
- * Given a string, find the length of the longest substring without repeating characters.
+ * 3. Longest Substring Without Repeating Characters Given a string, find the length of the longest substring without
+ * repeating characters.
  * <p>
  * Examples:
  * <p>
@@ -18,9 +13,13 @@ import java.util.Set;
  * <p>
  * Given "bbbbb", the answer is "b", with the length of 1.
  * <p>
- * Given "pwwkew", the answer is "wke", with the length of 3. Note that the answer must be a substring, "pwke" is a subsequence and not a substring.
+ * Given "pwwkew", the answer is "wke", with the length of 3. Note that the answer must be a substring, "pwke" is a
+ * subsequence and not a substring.
  * <p>
  * Subscribe to see which companies asked this question.
+ * <p>
+ * 
+ * @author kevin(ssp0xd7@gmail.com) 2017/3/14.
  */
 public class Solution_3 {
 
@@ -29,7 +28,7 @@ public class Solution_3 {
         int maxLength = 0;
         int sLength = s.length();
         for (int i = 0; i < sLength; i++) {
-            for (int j = i;j<sLength;j++) {
+            for (int j = i; j < sLength; j++) {
                 if (!set.contains(s.charAt(j))) {
                     set.add(s.charAt(j));
                 } else {
@@ -41,7 +40,7 @@ public class Solution_3 {
                 }
             }
         }
-        return maxLength>set.size()?maxLength:set.size();
+        return maxLength > set.size() ? maxLength : set.size();
     }
 
     public static void main(String[] args) {

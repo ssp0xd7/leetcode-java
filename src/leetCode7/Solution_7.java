@@ -1,23 +1,21 @@
 package leetCode7;
 
 /**
- * Created by Kevin_Mit on 2017/3/14.
- */
-
-/**
  * 7. Reverse Integer
  * <p>
  * Reverse digits of an integer.
  * <p>
- * Example1: x = 123, return 321
- * Example2: x = -123, return -321
+ * Example1: x = 123, return 321 Example2: x = -123, return -321
  * <p>
  * click to show spoilers.
  * <p>
- * Note:
- * The input is assumed to be a 32-bit signed integer. Your function should return 0 when the reversed integer overflows.
+ * Note: The input is assumed to be a 32-bit signed integer. Your function should return 0 when the reversed integer
+ * overflows.
  * <p>
  * Subscribe to see which companies asked this question.
+ * <p>
+ * 
+ * @author kevin(ssp0xd7@gmail.com) 2017/3/14.
  */
 public class Solution_7 {
 
