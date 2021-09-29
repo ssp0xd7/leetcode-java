@@ -1,4 +1,4 @@
-package leetcode.二叉树的最大深度;
+package 基础算法.二叉树的最大深度;
 
 import util.TreeNode;
 

@@ -1,4 +1,4 @@
-package leetcode.二叉树的中序遍历;
+package 基础算法.二叉树后续遍历;
 
 import util.TreeNode;
 
@@ -7,24 +7,26 @@ import java.util.List;
 
 public class Solution_1 {
 
+
     /**
-     * 递归法，最简单
+     * 递归法
      *
      * @param root
      * @return
      */
-    public List<Integer> inorderTraversal(TreeNode root) {
+    public List<Integer> preorderTraversal(TreeNode root) {
         List<Integer> res = new ArrayList<Integer>();
-        inorder(root, res);
+        preorder(root, res);
         return res;
     }
 
-    public void inorder(TreeNode root, List<Integer> res) {
+    public void preorder(TreeNode root, List<Integer> res) {
         if (root == null) {
             return;
         }
-        inorder(root.left, res);
+
+        preorder(root.left, res);
+        preorder(root.left, res);
         res.add(root.val);
-        inorder(root.right, res);
     }
 }

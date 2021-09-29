@@ -1,10 +1,9 @@
-package leetcode.二叉树的中序遍历;
+package 基础算法.二叉树的中序遍历;
 
 import util.TreeNode;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Stack;
 
 public class Solution_3 {
 

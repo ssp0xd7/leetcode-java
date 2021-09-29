@@ -1,4 +1,4 @@
-package leetcode.对称二叉树;
+package 基础算法.对称二叉树;
 
 import util.TreeNode;
 

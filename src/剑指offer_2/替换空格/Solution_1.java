@@ -1,5 +1,6 @@
 package 剑指offer_2.替换空格;
 
+
 public class Solution_1 {
 
     /**
@@ -10,10 +11,10 @@ public class Solution_1 {
      */
     public String replaceSpace(String s) {
         StringBuilder sb = new StringBuilder();
-        for (Character c:s.toCharArray()) {
+        for (Character c : s.toCharArray()) {
             if (c == ' ') {
                 sb.append("%20");
-            }else{
+            } else {
                 sb.append(c);
             }
         }

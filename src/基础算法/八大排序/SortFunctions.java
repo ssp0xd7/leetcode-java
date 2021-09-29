@@ -1,5 +1,7 @@
-package 剑指offer_2.八大排序;
+package 基础算法.八大排序;
 
+
+import util.TreeNode;
 
 public class SortFunctions {
 
@@ -296,6 +298,12 @@ public class SortFunctions {
         a[currPos] = temp;
     }
     //-----------------堆排序-----------------//
+
+
+    public static void insert(int data, TreeNode root) {
+
+    }
+
 }
 
 
