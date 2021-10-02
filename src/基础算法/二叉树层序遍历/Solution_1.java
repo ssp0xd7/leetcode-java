@@ -29,7 +29,7 @@ public class Solution_1 {
 
             res.add(head.val);
         }
-
+        res.toArray(new Integer[]{});
         return res;
     }
 }

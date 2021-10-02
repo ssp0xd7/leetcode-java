@@ -11,7 +11,7 @@ public class Solution_1 {
      * @return
      */
     public boolean isSymmetric(TreeNode root) {
-        return check(root, root);
+        return root == null || check(root.left, root.right);
     }
 
     public boolean check(TreeNode n1, TreeNode n2) {
@@ -25,4 +25,5 @@ public class Solution_1 {
 
         return n1.val == n2.val && check(n1.left, n2.right) && check(n1.right, n2.left);
     }
+
 }

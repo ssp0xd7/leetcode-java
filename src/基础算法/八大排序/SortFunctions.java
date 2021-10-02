@@ -298,12 +298,6 @@ public class SortFunctions {
         a[currPos] = temp;
     }
     //-----------------堆排序-----------------//
-
-
-    public static void insert(int data, TreeNode root) {
-
-    }
-
 }
 
 
