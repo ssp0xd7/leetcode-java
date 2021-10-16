@@ -193,41 +193,35 @@ public class SortFunctions {
         if (a == null || a.length == 1) {
             return;
         }
-
-        int left, right;
-        int target;
         if (low >= high) {
             return;
         }
 
-        left = low;
-        right = high;
-        target = a[left];
+        int partition = partition(a, low, high);
+        //递归
+        quickSort(a, low, partition - 1);
+        quickSort(a, partition + 1, high);
+    }
+
+    public static int partition(int[] a, int low, int high) {
+        int left = low;
+        int right = high;
+        int target = a[left];
         while (left < right) {
             //找到右侧第一个小于target
             while (left < right && a[right] > target) {
                 right--;
             }
-            if (left < right) {
-                a[left] = a[right];
-                left++;
-            }
-
-            //找到左侧第一个大于targe
+            a[left] = a[right];
             while (left < right && a[left] < target) {
                 left++;
             }
-            if (left < right) {
-                a[right] = a[left];
-                right--;
-            }
+            //找到左侧第一个大于targe
+            a[right] = a[left];
         }
         //此时left左侧都比target小，右侧都比target大，targe为中心值
         a[left] = target;
-
-        //递归
-        quickSort(a, low, left - 1);
-        quickSort(a, left + 1, high);
+        return left;
     }
     //-----------------快速排序-----------------//
 

@@ -3,8 +3,8 @@ package 剑指offer_2.把数组排成最小的数;
 public class Solution {
 
     /**
-     * 拼接字符串 x + y > y + xx+y>y+x ，则 xx “大于” yy ；
-     * 反之，若 x + y < y + xx+y<y+x ，则 xx “小于” yy ；
+     * 拼接字符串 x + y > y + x ，则 x “大于” y ；
+     * 反之，若 x + y < y + x，则 x “小于” y ；
      *
      * @param nums
      * @return
