@@ -3,6 +3,10 @@ package 基础算法.八大排序;
 
 import util.TreeNode;
 
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
+
 public class SortFunctions {
 
     /**
@@ -292,6 +296,15 @@ public class SortFunctions {
         a[currPos] = temp;
     }
     //-----------------堆排序-----------------//
+
+    public static void main(String[] args) {
+//        Collections.sort(new ArrayList<T>(),new Comparable<Integer>(){
+//            @Override
+//            public int compareTo(Integer o) {
+//                return 0;
+//            }
+//        });
+    }
 }
 
 
